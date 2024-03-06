@@ -63,7 +63,7 @@ class parkingGarage {
     printInfo() {
         console.log(`Tickets left: ${this.tickets}
          \nParking Spaces left: ${this.parkingSpaces}`);
-    };
+    }
 
     takeTicket() {
         let ticketTaken = true;
@@ -77,7 +77,7 @@ class parkingGarage {
             \nParking Spaces left: ${parkingSpaces}`);
             return currentCar;
         };
-    };
+    }
 
     payForParking() {
         let payment = prompt('Please insert $5 for parking: ');
@@ -87,7 +87,7 @@ class parkingGarage {
         } else {
             return this.currentTicket = {paid: false};
         };
-    };
+    }
 
     leaveGarage() {
         let paid = this.currentTicket;
@@ -99,8 +99,7 @@ class parkingGarage {
             parkingSpaces.push(takenParking);
             console.log(`Tickets left: ${tickets}
             \nParking Spaces left: ${parkingSpaces}`);
-        } 
-        else {
+        } else {
             let payment = prompt('Please insert $5: ');
             if (payment == 5) {
                 alert('Thank you, have a nice day!');
@@ -120,8 +119,10 @@ class parkingGarage {
 let car1 = new parkingGarage();
 let car2 = new parkingGarage();
 
-console.log(car1.takeTicket());
+// console.log(car1.takeTicket())
 // console.log(car1.payForParking())
+// console.log(car1.leaveGarage())
 
-// console.log(car2.takeTicket());
-// console.log(car2.payForParking());
+// console.log(car2.takeTicket())
+// console.log(car2.payForParking())
+// console.log(car2.leaveGarage())

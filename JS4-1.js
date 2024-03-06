@@ -24,7 +24,7 @@
 //* 4. Write a recursion function to perform the fibonacci sequence up to the number passed in.
 //? You don't need to log out 'iteration 0' etc if you don't want to. 
 //? Just log the final values for each iteration
-// Output for fib(5) => 
+// Output for fib(5) =>
 // Iteration 0: 1
 // Iteration 1: 1
 // Iteration 2: 2
