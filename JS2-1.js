@@ -56,10 +56,9 @@ function shoppingCart() {
     isRunning = true;
     while (isRunning) {
         let userinput =
-         prompt("To add an item, type the item you'd like to add or type 'remove' to remove an item: ");
-        if (userinput == null) {
-            console.log(list);
-            break;
+         prompt("To add an item, type the item you'd like to add or type 'remove' to remove an item. Type quit or hit 'cancel' to complete and see your list: ");
+        if (userinput == null || userinput == 'quit') {
+            return list;
         } else if (userinput == 'remove') {
             let item = prompt("What item would you like to remove?: ");
             list.splice(list.indexOf(item), 1);
